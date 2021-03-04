@@ -2,7 +2,7 @@
 
 A basic extension that provides syntax highlighting for pseudocode as it is written at CYTECH. As this is a french school, this extension only supports pseudocode written in French.
 
-![example image](./img/example.png)
+![example image](https://github.com/draescherl/vscode-cycode/blob/master/img/example.png)
 
 ## Known Issues
 
@@ -17,26 +17,26 @@ Initial release.
 Initial release of cycode. <br>
 
 Supported operators : <br>
-<ul>
-    <li>`+` `-` `*` `/`</li>
-    <li>`<` `>` `=` `<=` `>=` `!=`</li>
-    <li>`<-`</li>
-    <li>`ET` `OU`</li>
-</ul>
+
+> < > = <= >= != <br>
+> <- <br>
+> ET OU <br>
+
 Supported control sequences : <br>
-<ul>
-    <li>`SI ... ALORS`</li>
-    <li>`POUR ... ALLANT DE ... A ... FAIRE`<li>
-    <li>`TANT QUE ... FAIRE`</li>
-    <li>`NON`</li>
-    <li>`RETOURNER`</li>
-</ul>
-Comments are prefixed by `#` <br>
-String are between double quotes `"..."`<br>
-Booleans are `VRAI` and `FAUX`.
+
+> SI ... ALORS <br>
+> POUR .. ALLANT DE ... A ... FAIRE <br>
+> TANT QUE ... FAIRE <br>
+> NON <br>
+> RETOURNER <br>
+
+Comments are prefixed by # <br>
+String are between double quotes "..."<br>
+Booleans are VRAI and FAUX.
 
 ## Authors
 <ul>
     <li>L. DRAESCHER -- draescherl@eisti.eu</li>
     <li>V. DUSART -- dusartvict@eisti.eu</li>
 </ul>
+
