@@ -2,7 +2,7 @@
 
 A basic extension that provides syntax highlighting for pseudocode as it is written at CYTECH. As this is a french school, this extension only supports pseudocode written in French.
 
-![example image](https://github.com/draescherl/vscode-cycode/blob/master/img/example.png)
+![example image](https://github.com/draescherl/vscode-cycode/raw/master/img/example.png)
 
 ## Known Issues
 
@@ -25,7 +25,7 @@ Supported operators : <br>
 Supported control sequences : <br>
 
 > SI ... ALORS <br>
-> POUR .. ALLANT DE ... A ... FAIRE <br>
+> POUR ... ALLANT DE ... A ... FAIRE <br>
 > TANT QUE ... FAIRE <br>
 > NON <br>
 > RETOURNER <br>

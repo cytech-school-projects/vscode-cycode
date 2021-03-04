@@ -1,5 +1,6 @@
 {
     "name": "cytech-pseudocode",
+    "publisher": "draescherl",
     "displayName": "CYTECH pseudocode",
     "description": "Syntax highlighting for pseudocode following CYTECH norms",
     "version": "0.0.1",
