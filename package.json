@@ -1,0 +1,25 @@
+{
+    "name": "cytech-pseudocode",
+    "displayName": "CYTECH pseudocode",
+    "description": "Syntax highlighting for pseudocode following CYTECH norms",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.53.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cycode",
+            "aliases": ["cytech-pseudocode", "cycode"],
+            "extensions": [".cycode"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cycode",
+            "scopeName": "source.cycode",
+            "path": "./syntaxes/cycode.tmLanguage.json"
+        }]
+    }
+}

@@ -1,0 +1,77 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "cytech-pseudocode",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#functions"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.cycode",
+					"match": "(?i)(\\w*(SI|TANTQUE|POUR)|(FAIRE|(ALLANT DE)|ALORS|retourner|NON))"
+				},
+				{
+					"name": "keyword.operator.cycode",
+					"match": "[+-/*<>=!]|(ET)|(OU)"
+				},
+				{
+					"name": "keyword.other.cycode",
+					"match": "(?i)(FONCTION|PROCEDURE|VARIABLE(S?)|DEBUT|FIN|PROGRAMME)"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.cycode",
+					"begin": "\"",
+					"end": "\""
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.cycode",
+					"match": "#.*\n"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric.cycode",
+					"match": "(?x)\n(?<!\\$)\n(\n  \\b[0-9]([0-9_]*[0-9])?\\.\\B(?!\\.)\n  |\n  \\b[0-9]([0-9_]*[0-9])?\\.([Ee][+-]?[0-9]([0-9_]*[0-9])?)[FfDd]?\\b\n  |\n  \\b[0-9]([0-9_]*[0-9])?\\.([Ee][+-]?[0-9]([0-9_]*[0-9])?)?[FfDd]\\b\n  |\n  \\b[0-9]([0-9_]*[0-9])?\\.([0-9]([0-9_]*[0-9])?)([Ee][+-]?[0-9]([0-9_]*[0-9])?)?[FfDd]?\\b\n  |\n  (?<!\\.)\\B\\.[0-9]([0-9_]*[0-9])?([Ee][+-]?[0-9]([0-9_]*[0-9])?)?[FfDd]?\\b\n  |\n  \\b[0-9]([0-9_]*[0-9])?([Ee][+-]?[0-9]([0-9_]*[0-9])?)[FfDd]?\\b\n  |\n  \\b[0-9]([0-9_]*[0-9])?([Ee][+-]?[0-9]([0-9_]*[0-9])?)?[FfDd]\\b\n  |\n  \\b(0|[1-9]([0-9_]*[0-9])?)(?!\\.)[Ll]?\\b\n)\n(?!\\$)"
+				},
+				{
+					"name": "constant.language.cycode",
+					"match": "\\b(VRAI|FAUX)\\b"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "entity.name.function.cycode",
+					"match": "([a-z-A-Z]+)(?=\\()"
+				}
+			]
+		}
+	},
+	"scopeName": "source.cycode"
+}
